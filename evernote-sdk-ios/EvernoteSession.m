@@ -632,7 +632,7 @@
     if ([self.response respondsToSelector:@selector(statusCode)]) {
         NSInteger statusCode = [(id)self.response statusCode];
         if (statusCode != 200) {
-            NSLog(@"Received error HTTP response code: %d", statusCode);
+            NSLog(@"Received error HTTP response code: %ld", (long)statusCode);
             NSLog(@"%@", string);
             NSDictionary* userInfo = nil;
             if(statusCode) {
