@@ -93,15 +93,6 @@
 		0BB3D2911524F01E001C4534 /* EDAMTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D2331524EE62001C4534 /* EDAMTypes.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		0BB3D2921524F01E001C4534 /* EDAMUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D2351524EE62001C4534 /* EDAMUserStore.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		0BB3D2931524F01E001C4534 /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB3D2371524EE62001C4534 /* EDAMErrors.m */; settings = {COMPILER_FLAGS = "-w"; }; };
-		0BDBBC451550A11A003E6681 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDBBC441550A11A003E6681 /* SenTestingKit.framework */; };
-		0BDBBC461550A11A003E6681 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3D24D1524EEF3001C4534 /* UIKit.framework */; };
-		0BDBBC471550A11A003E6681 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3D1B01524ED96001C4534 /* Foundation.framework */; };
-		0BDBBC4D1550A11A003E6681 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BDBBC4B1550A11A003E6681 /* InfoPlist.strings */; };
-		0BDBBC581550A160003E6681 /* EvernoteSessionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BDBBC571550A160003E6681 /* EvernoteSessionTests.m */; };
-		0BDBBC591550A1C1003E6681 /* libevernote-sdk-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3D1AD1524ED96001C4534 /* libevernote-sdk-ios.a */; };
-		0BDBBC5A1550A1E7003E6681 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0CF84152E2601003D6115 /* Security.framework */; };
-		0BDBBC671550A3A4003E6681 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BDBBC5E1550A3A4003E6681 /* libOCMock.a */; };
-		0BDBBC681550A3A4003E6681 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0BDBBC5F1550A3A4003E6681 /* LICENSE */; };
 		0BF0CF81152E25E1003D6115 /* SSKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BF0CF7F152E25E1003D6115 /* SSKeychain.h */; };
 		0BF0CF82152E25E1003D6115 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF0CF80152E25E1003D6115 /* SSKeychain.m */; };
 		0BF0CF85152E2601003D6115 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BF0CF84152E2601003D6115 /* Security.framework */; };
@@ -343,7 +334,6 @@
 		0BBA34A51537AF7D00DC7DD5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BBA34A61537AFED00DC7DD5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0BBA34A71537B09300DC7DD5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
-		0BDBBC431550A11A003E6681 /* UnitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BDBBC441550A11A003E6681 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		0BDBBC4A1550A11A003E6681 /* UnitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		0BDBBC4C1550A11A003E6681 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -489,19 +479,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDBBC3F1550A11A003E6681 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BDBBC5A1550A1E7003E6681 /* Security.framework in Frameworks */,
-				0BDBBC591550A1C1003E6681 /* libevernote-sdk-ios.a in Frameworks */,
-				0BDBBC451550A11A003E6681 /* SenTestingKit.framework in Frameworks */,
-				0BDBBC461550A11A003E6681 /* UIKit.framework in Frameworks */,
-				0BDBBC471550A11A003E6681 /* Foundation.framework in Frameworks */,
-				0BDBBC671550A3A4003E6681 /* libOCMock.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -624,7 +601,6 @@
 			children = (
 				0BB3D1AD1524ED96001C4534 /* libevernote-sdk-ios.a */,
 				0BB3D26E1524EF37001C4534 /* SampleApp.app */,
-				0BDBBC431550A11A003E6681 /* UnitTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1079,24 +1055,6 @@
 			productReference = 0BB3D26E1524EF37001C4534 /* SampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0BDBBC421550A11A003E6681 /* UnitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0BDBBC541550A11A003E6681 /* Build configuration list for PBXNativeTarget "UnitTests" */;
-			buildPhases = (
-				0BDBBC3E1550A11A003E6681 /* Sources */,
-				0BDBBC3F1550A11A003E6681 /* Frameworks */,
-				0BDBBC401550A11A003E6681 /* Resources */,
-				0BDBBC411550A11A003E6681 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = UnitTests;
-			productName = UnitTests;
-			productReference = 0BDBBC431550A11A003E6681 /* UnitTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1122,7 +1080,6 @@
 			targets = (
 				0BB3D1AC1524ED96001C4534 /* evernote-sdk-ios */,
 				0BB3D26D1524EF37001C4534 /* SampleApp */,
-				0BDBBC421550A11A003E6681 /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1154,31 +1111,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0BDBBC401550A11A003E6681 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BDBBC4D1550A11A003E6681 /* InfoPlist.strings in Resources */,
-				0BDBBC681550A3A4003E6681 /* LICENSE in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BDBBC411550A11A003E6681 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
 		414BD857983A4B8ABFEAD915 /* Warn for TODO and FIXME comments */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1327,14 +1262,6 @@
 				A9BE47E6178200B400471BF7 /* ENXMLWriter.m in Sources */,
 				A9BE47EF178200B400471BF7 /* NSRegularExpression+ENAGRegex.m in Sources */,
 				A9BE47F2178200B400471BF7 /* NSString+EDAMAdditions.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0BDBBC3E1550A11A003E6681 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0BDBBC581550A160003E6681 /* EvernoteSessionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1517,56 +1444,6 @@
 			};
 			name = Release;
 		};
-		0BDBBC521550A11A003E6681 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/UnitTests/3rdParty/OCMock\"",
-				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/UnitTests/3rdParty/OCMock/**";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		0BDBBC531550A11A003E6681 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "UnitTests/UnitTests-Prefix.pch";
-				INFOPLIST_FILE = "UnitTests/UnitTests-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/UnitTests/3rdParty/OCMock\"",
-				);
-				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
-				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/UnitTests/3rdParty/OCMock/**";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1593,15 +1470,6 @@
 			buildConfigurations = (
 				0BB3D2861524EF37001C4534 /* Debug */,
 				0BB3D2871524EF37001C4534 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0BDBBC541550A11A003E6681 /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0BDBBC521550A11A003E6681 /* Debug */,
-				0BDBBC531550A11A003E6681 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
